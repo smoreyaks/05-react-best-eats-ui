@@ -1,10 +1,11 @@
 import './App.css';
-import Hero from '../../react-tw-new/src/Hero/Hero'
+import Navbar from './components/Navbar';
+
 
 function App() {
   return (
     <div className="App">
-      <Hero />
+      <Navbar />
     </div>
   );
 }
