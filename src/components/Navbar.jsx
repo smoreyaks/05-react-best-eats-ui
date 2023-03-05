@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-import { AiOutlineMenu } from 'react-icons/ai';
+import { AiOutlineMenu, AiOutlineSearch } from 'react-icons/ai';
+import { BsFillCartFill } from 'react-icons/bs';
 
 
 
@@ -21,6 +22,18 @@ const Navbar = () => {
                     <p className='p-2'>Pickup</p>
                 </div>
             </div>
+            {/* Search Input*/}
+            <div className='bg-gray-200 rounded-full flex items-center px-2 w-[200px] sm:w-[400px] lg:w-[500px]'>
+                <AiOutlineSearch size={25} />
+                <input 
+                    type="text" 
+                    placeholder='Search Food' 
+                    className='bg-transparent p-2 w-full focus:outline-none'
+                />
+            </div>
+            <button className='bg-black text-white hidden md:flex items-center py-2 rounded-full'>
+                <BsFillCartFill size={20} className='mr-2' /> Cart
+            </button>
             
         </div>
     )
